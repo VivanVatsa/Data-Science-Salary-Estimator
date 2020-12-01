@@ -7,7 +7,7 @@ import time
 import pandas as pd
 
 
-def get_jobs(keyword, num_jobs, verbose, path, slp_time):
+def get_jobs(keyword, num_jobs, verbose):
     """Gathers jobs as a dataframe, scraped from Glassdoor"""
 
     # Initializing the webdriver
@@ -17,13 +17,17 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
     # options.add_argument('headless')
 
     # Change the path to where chromedriver is in your home folder.
-    driver = webdriver.Chrome(executable_path=path, options=options)
+    driver = webdriver.Chrome(
+        executable_path=
+        "/Users/omersakarya/Documents/GitHub/scraping-glassdoor-selenium/chromedriver",
+        options=options,
+    )
     driver.set_window_size(1120, 1000)
 
     url = (
-        "https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword="
-        + keyword + "&sc.keyword=" + keyword + "&locT=&locId=&jobType=")
-    # url = 'https://www.glassdoor.com/Job/jobs.htm?sc.keyword="' + keyword + '"&locT=C&locId=1147401&locKeyword=San%20Francisco,%20CA&jobType=all&fromAge=-1&minSalary=0&includeNoSalaryJobs=true&radius=100&cityId=-1&minRating=0.0&industryId=-1&sgocId=-1&seniorityType=all&companyId=-1&employerSizes=0&applicationType=0&remoteWorkType=0'
+        'https://www.glassdoor.com/Job/jobs.htm?sc.keyword="' + keyword +
+        '"&locT=C&locId=1147401&locKeyword=San%20Francisco,%20CA&jobType=all&fromAge=-1&minSalary=0&includeNoSalaryJobs=true&radius=100&cityId=-1&minRating=0.0&industryId=-1&sgocId=-1&seniorityType=all&companyId=-1&employerSizes=0&applicationType=0&remoteWorkType=0'
+    )
     driver.get(url)
     jobs = []
 
@@ -32,7 +36,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
 
         # Let the page load. Change this number based on your internet speed.
         # Or, wait until the webpage is loaded, instead of hardcoding it.
-        time.sleep(slp_time)
+        time.sleep(4)
 
         # Test for the "Sign Up" prompt and get rid of it.
         try:
@@ -43,11 +47,9 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
         time.sleep(0.1)
 
         try:
-            driver.find_element_by_css_selector(
-                '[alt="Close"]').click()  # clicking to the X.
-            print(" x out worked")
+            driver.find_element_by_class_name(
+                "ModalStyle__xBtn___29PT9").click()  # clicking to the X.
         except NoSuchElementException:
-            print(" x out failed")
             pass
 
         # Going through each job in this page
@@ -81,7 +83,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
 
             try:
                 salary_estimate = driver.find_element_by_xpath(
-                    './/span[@class="gray salary"]').text
+                    './/span[@class="gray small salary"]').text
             except NoSuchElementException:
                 salary_estimate = (
                     -1)  # You need to set a "not found value. It's important."
@@ -220,3 +222,8 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
     return pd.DataFrame(
         jobs
     )  # This line converts the dictionary object into a pandas DataFrame.
+
+
+# This line will open a new chrome window and start the scraping.
+df = get_jobs("data scientist", 5, False)
+df
