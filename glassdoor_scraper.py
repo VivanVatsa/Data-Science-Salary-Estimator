@@ -7,7 +7,7 @@ import time
 import pandas as pd
 
 
-def get_jobs(keyword, num_jobs, verbose):
+def get_jobs(keyword, num_jobs, verbose, path):
     """Gathers jobs as a dataframe, scraped from Glassdoor"""
 
     # Initializing the webdriver
@@ -18,8 +18,7 @@ def get_jobs(keyword, num_jobs, verbose):
 
     # Change the path to where chromedriver is in your home folder.
     driver = webdriver.Chrome(
-        executable_path=
-        "/Users/omersakarya/Documents/GitHub/scraping-glassdoor-selenium/chromedriver",
+        executable_path=path,
         options=options,
     )
     driver.set_window_size(1120, 1000)
