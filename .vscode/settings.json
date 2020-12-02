@@ -1,4 +1,5 @@
 {
     "cmake.sourceDirectory": "${workspaceFolder}/.",
-    "python.pythonPath": "C:\\Users\\Vivan\\AppData\\Local\\Programs\\Python\\Python39-32\\python.exe"
+    "python.pythonPath": "C:\\Users\\Vivan\\AppData\\Local\\Programs\\Python\\Python39-32\\python.exe",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }
