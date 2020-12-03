@@ -22,8 +22,7 @@ def get_jobs(keyword, num_jobs, verbose):
 
     # Change the path to where chromedriver is in your home folder.
     driver = webdriver.Chrome(
-        executable_path=
-        "/Users/omersakarya/Documents/GitHub/scraping-glassdoor-selenium/chromedriver",
+        executable_path="/Users/omersakarya/Documents/GitHub/scraping-glassdoor-selenium/chromedriver",
         options=options,
     )
     driver.set_window_size(1120, 1000)
@@ -175,7 +174,8 @@ def get_jobs(keyword, num_jobs, verbose):
                 except NoSuchElementException:
                     competitors = -1
 
-            except NoSuchElementException:  # Rarely, some job postings do not have the "Company" tab.
+            # Rarely, some job postings do not have the "Company" tab.
+            except NoSuchElementException:
                 headquarters = -1
                 size = -1
                 founded = -1
@@ -229,7 +229,7 @@ def get_jobs(keyword, num_jobs, verbose):
 
 
 # %%
-# This line will open a new chrome window and start the scraping.
+# This line will open a new chrome window and start the scraping. this is where we need to everything.
 df = get_jobs("data scientist", 5, False)
 df
 
