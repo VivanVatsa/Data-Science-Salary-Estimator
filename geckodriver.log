@@ -22,3 +22,20 @@ webdriverClickElement@chrome://marionette/content/interaction.js:179:31
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1607079409756	geckodriver	INFO	Listening on 127.0.0.1:53855
+1607079412788	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Vivan\\AppData\\Local\\Temp\\rust_mozprofile4Ea96m"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607079418462	Marionette	INFO	Listening on port 53865
+1607079418659	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.glassdoor.co.in/jobSearch/static/js/gd-jobSearch.bundle.js?v=c2170, line 1: TypeError: t.selected is undefined
+[Child 14920, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:545
+1607080977913	Marionette	INFO	Stopped listening on port 53865
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
