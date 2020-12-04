@@ -18,11 +18,15 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
     # options = webdriver.ChromeOptions()
     options = webdriver.FirefoxOptions()
 
+    # options = webdriver.ChromeOptions()
     # Uncomment the line below if you'd like to scrape without a new Chrome window every time.
     # options.add_argument('headless')
 
     # Change the path to where chromedriver is in your home folder.
+
     driver = webdriver.Firefox(executable_path=path, options=options)
+    # driver = webdriver.Chrome(executable_path=path, options=options)
+
     driver.set_window_size(1120, 1000)
 
     url = "https://www.glassdoor.co.in/Job/data-scientist-jobs-SRCH_KO0,14.htm?countryRedirect=true"
@@ -86,7 +90,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
                     './/span[@class="css-1uyte9r css-hca4ks e1wijj242"]').text
             except NoSuchElementException:
                 salary_estimate = (
-                    -1)  # You need to set a "not found value. It's important."
+                )  # You need to set a "not found value. It's important."
 
             try:
                 rating = driver.find_element_by_xpath(
@@ -116,6 +120,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
                     #    <label>Headquarters</label>
                     #    <span class="value">San Francisco, CA</span>
                     # </div>
+
                     headquarters = driver.find_element_by_xpath(
                         './/div[@class="infoEntity"]//label[text()="Headquarters"]//following-sibling::*'
                     ).text
@@ -155,6 +160,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
                         './/div[@class="infoEntity"]//label[text()="Sector"]//following-sibling::*'
                     ).text
                 except NoSuchElementException:
+                    # sector = -1
                     sector = -1
 
                 try:

@@ -11,4 +11,3 @@ Data Science Project: DIY
         iii. set the parameters & study the website behavior
         iv. according to the behavior setup selenium to do the monotonic data scrapping job.
         v. python script to scrape data.
-        
