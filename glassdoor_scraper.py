@@ -29,7 +29,8 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
 
     driver.set_window_size(1120, 1000)
 
-    url = "https://www.glassdoor.co.in/Job/data-scientist-jobs-SRCH_KO0,14.htm?countryRedirect=true"
+    url = ("https://www.glassdoor.co.in/Job/" + keyword +
+           "-jobs-SRCH_KO0,14.htm?countryRedirect=true")
     driver.get(url)
     jobs = []
 
@@ -87,10 +88,10 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
 
             try:
                 salary_estimate = driver.find_element_by_xpath(
-                    './/span[@class="css-1uyte9r css-hca4ks e1wijj242"]').text
+                    './/span[@class="salary"]').text
             except NoSuchElementException:
                 salary_estimate = (
-                )  # You need to set a "not found value. It's important."
+                    -1)  # You need to set a "not found value. It's important."
 
             try:
                 rating = driver.find_element_by_xpath(
