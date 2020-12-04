@@ -11,3 +11,6 @@ Data Science Project: DIY
         iii. set the parameters & study the website behavior
         iv. according to the behavior setup selenium to do the monotonic data scrapping job.
         v. python script to scrape data.
+
+
+https://www.glassdoor.co.in/Job/data-scientist-jobs-SRCH_KO0,14_IP2.htm?pgc=AB4AAYEAHgAAAAAAAAAAAAAAAZRDZtkAQwEBAQh6YYTiqqOcU0x3w5cY7UCmSwJTUhMPbBqVMSdqYLjS7SDz%2BcxAwdE7UD8hTmAcZ%2B%2FEGitZBKIRKT6WpFqEr8oAAA%3D%3D
