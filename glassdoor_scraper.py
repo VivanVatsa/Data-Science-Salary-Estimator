@@ -45,8 +45,10 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
         time.sleep(0.1)
 
         try:
-            driver.find_element_by_class_name(
-                "ModalStyle__xBtn___29PT9").click()  # clicking to the X.
+            # driver.find_element_by_class_name(
+            #     "ModalStyle__xBtn___29PT9").click()  # clicking to the X.
+
+            driver.find_element_by_css_selector('[alt="Close"]').click()
         except NoSuchElementException:
             pass
 
@@ -81,7 +83,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
 
             try:
                 salary_estimate = driver.find_element_by_xpath(
-                    './/span[@class="gray small salary"]').text
+                    './/span[@class="css-1uyte9r css-hca4ks e1wijj242"]').text
             except NoSuchElementException:
                 salary_estimate = (
                     -1)  # You need to set a "not found value. It's important."
