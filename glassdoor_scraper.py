@@ -88,7 +88,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
 
             try:
                 salary_estimate = driver.find_element_by_xpath(
-                    './/span[@class="salary"]').text
+                    './/span[@class="css-1uyte9r css-hca4ks e1wijj242"]').text
             except NoSuchElementException:
                 salary_estimate = (
                     -1)  # You need to set a "not found value. It's important."
@@ -190,6 +190,8 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
 
             if verbose:
                 print("Headquarters: {}".format(headquarters))
+                # print("Headquarters: {}".format(headquarters))
+                # print("Size: {}".format(size))
                 print("Size: {}".format(size))
                 print("Founded: {}".format(founded))
                 print("Type of Ownership: {}".format(type_of_ownership))
