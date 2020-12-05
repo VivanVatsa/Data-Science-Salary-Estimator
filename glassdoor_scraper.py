@@ -179,7 +179,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
                     competitors = -1
 
             except NoSuchElementException:  # Rarely, some job postings do not have the "Company" tab.
-                headquarters = -1
+                # headquarters = -1
                 size = -1
                 founded = -1
                 type_of_ownership = -1
@@ -189,9 +189,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
                 competitors = -1
 
             if verbose:
-                print("Headquarters: {}".format(headquarters))
                 # print("Headquarters: {}".format(headquarters))
-                # print("Size: {}".format(size))
                 print("Size: {}".format(size))
                 print("Founded: {}".format(founded))
                 print("Type of Ownership: {}".format(type_of_ownership))
