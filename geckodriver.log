@@ -533,3 +533,17 @@ webdriverClickElement@chrome://marionette/content/interaction.js:179:31
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1607153081855	geckodriver	INFO	Listening on 127.0.0.1:63787
+1607153084851	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Vivan\\AppData\\Local\\Temp\\rust_mozprofile9F3A6J"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607153092397	Marionette	INFO	Listening on port 63798
+1607153092831	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.glassdoor.co.in/jobSearch/static/js/gd-jobSearch.bundle.js?v=fb951, line 1: TypeError: t.selected is undefined
+1607153125804	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31

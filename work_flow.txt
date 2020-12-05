@@ -4,7 +4,7 @@ Data Science Project: DIY
 
 1. the first thing is to think what data sets you want to warm up with.
 
-2. Data Cleaning:
+2. Data Collecting:
     this is where I set my selenium driver to do all the scrapping task 
         i. first set up the website to scrape the data
         ii. then provide with what specific dataset you need to work on
@@ -13,4 +13,6 @@ Data Science Project: DIY
         v. python script to scrape data.
 
 
-https://www.glassdoor.co.in/Job/data-scientist-jobs-SRCH_KO0,14_IP2.htm?pgc=AB4AAYEAHgAAAAAAAAAAAAAAAZRDZtkAQwEBAQh6YYTiqqOcU0x3w5cY7UCmSwJTUhMPbBqVMSdqYLjS7SDz%2BcxAwdE7UD8hTmAcZ%2B%2FEGitZBKIRKT6WpFqEr8oAAA%3D%3D
+3. Data Cleaning:
+    this is where I would filter the unwanted data & add the desired data to work
+        i.
