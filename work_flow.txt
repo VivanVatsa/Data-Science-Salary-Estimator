@@ -17,4 +17,4 @@ Data Science Project: DIY
     this is where I would filter the unwanted data & add the desired data to work
         i. segragate the generated data from the scraper
         ii. create a new branch to work on & a new script for data cleaning
-        
+        iii. then read the csv file generated with scraping the target 
