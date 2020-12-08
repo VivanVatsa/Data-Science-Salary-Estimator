@@ -33,8 +33,7 @@ df
 
 # company name text only
 #%%
-df["company_txt"] = df.apply(lambda x: x["Company Name"]
-                             if x["Rating"] < 0 else x["Company Name"][:-5])
+df["company_txt"] = df.apply(lambda x: x["Company Name"][:-5])
 
 # state field
 # age of company
