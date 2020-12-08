@@ -18,19 +18,16 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
     # options = webdriver.ChromeOptions()
     options = webdriver.FirefoxOptions()
 
-    # options = webdriver.ChromeOptions()
     # Uncomment the line below if you'd like to scrape without a new Chrome window every time.
     # options.add_argument('headless')
 
     # Change the path to where chromedriver is in your home folder.
 
     driver = webdriver.Firefox(executable_path=path, options=options)
-    # driver = webdriver.Chrome(executable_path=path, options=options)
 
     driver.set_window_size(1120, 1000)
 
-    url = ("https://www.glassdoor.co.in/Job/" + keyword +
-           "-jobs-SRCH_KO0,14.htm?countryRedirect=true")
+    url = "https://www.glassdoor.co.in/Job/data-scientist-jobs-SRCH_KO0,14.htm?countryRedirect=true"
     driver.get(url)
     jobs = []
 
@@ -87,11 +84,14 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
                     time.sleep(5)
 
             try:
-                salary_estimate = driver.find_element_by_xpath(
-                    './/span[@class="css-1uyte9r css-hca4ks e1wijj242"]').text
+                # salary_estimate = driver.find_element_by_xpath(
+                #     './/span[@class="Salary"]').text
+
+                salary_estimate = driver.find_element_by_css_selector(
+                    '[class="css-1uyte9r css-hca4ks e1wijj242"]').text
             except NoSuchElementException:
-                salary_estimate = (
-                    -1)  # You need to set a "not found value. It's important."
+                salary_estimate = -1
+                # You need to set a "not found value. It's important."
 
             try:
                 rating = driver.find_element_by_xpath(
@@ -117,10 +117,10 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
                 ).click()
 
                 try:
-                    # <div class="infoEntity">
-                    #    <label>Headquarters</label>
-                    #    <span class="value">San Francisco, CA</span>
-                    # </div>
+                # <div class="infoEntity">
+                #    <label>Headquarters</label>
+                #    <span class="value">San Francisco, CA</span>
+                # </div>
 
                     headquarters = driver.find_element_by_xpath(
                         './/div[@class="infoEntity"]//label[text()="Headquarters"]//following-sibling::*'
@@ -190,8 +190,6 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
 
             if verbose:
                 print("Headquarters: {}".format(headquarters))
-                # print("Headquarters: {}".format(headquarters))
-                # print("Size: {}".format(size))
                 print("Size: {}".format(size))
                 print("Founded: {}".format(founded))
                 print("Type of Ownership: {}".format(type_of_ownership))

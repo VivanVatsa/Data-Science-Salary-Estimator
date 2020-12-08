@@ -1,4 +1,4 @@
-Job Title,Salary Estimate,Job Description,Rating,Company Name,Location,Headquarters,Size,Founded,Type of ownership,Industry,Sector,Revenue,Competitors
+Job Title,Salary Estimate,Job Description,Rating,Company Name,Location,Size,Founded,Type of ownership,Industry,Sector,Revenue,min_salary,max_salary,average-salary,currency,company_txt,age,python_yn,data,analysis
 Data Scientist,"₹417K-₹1,000K (Glassdoor Est.)","If you are a data junkie who would like to wrangle through huge data sets of usage, stats, clickstreams, free text feedbacks and more to predict the user experience, adoption and retention. You like to solve complex and challenging problems and articulate the results in a lucid manner. Then we’ve got the problem for you and the data to solve it.
 
 In your role as data scientist you will :
@@ -16,70 +16,7 @@ Very strong SQL and data visualization
 Exposure to Big Data platforms such as Spark, Mahout, Scala, AWS machine learning is a plus
 Great communications skills
 Verizon recently acquired BlueJeans and plans to integrate BlueJeans employees into Verizon, including its compensation and benefits programs, in due course. This position will be part of that planned integration.",3.1,"BlueJeans
-3.1",Bangalore,-1,201 to 500 Employees,2009,Company - Private,Enterprise Software & Network Solutions,Information Technology,Unknown / Non-Applicable,-1
-Data Scientist 1,-1,"Who we are: Fueled by a fundamental belief that having access to financial services creates opportunity, PayPal (NASDAQ: PYPL) is committed to democratizing financial services and empowering people and businesses to join and thrive in the global economy. Our open digital payments platform gives PayPal’s 286 million active account holders the confidence to connect and transact in new and powerful ways, whether they are online, on a mobile device, in an app, or in person. Through a combination of technological innovation and strategic partnerships, PayPal creates better ways to manage and move money, and offers choice and flexibility when sending payments, paying or getting paid. Available in more than 200 markets around the world, the PayPal platform, including Braintree, Venmo and Xoom enables consumers and merchants to receive money in more than 100 currencies, withdraw funds in 56 currencies and hold balances in their PayPal accounts in 25 currencies.
-Job Description Summary: We’re looking for a data-driven, outcome-focused, and high performing Data Scientist to join our Global Collections Strategy team. Data Scientists in the team apply their analytical and technical skills to derive actionable intelligence. They analyze customer behavioral patterns to recommend business strategies to improve efficiency and effectiveness of Collection efforts. They collaborate with Technology and Operations partners in developing innovative and personalized experience based on the most effective channels and treatments to optimize customer experience.
-Job Description:
-Specific responsibilities include:
-Provide analytical insights by analyzing various types of data, including mining our customer data, review of relevant cases/samples, and incorporation of feedback from teammates.
-Work closely with business partners and stakeholders to determine how to design analysis, testing, and measurement approaches that will significantly improve our ability to understand and address emerging business issues.
-Produce intelligent, scalable, and automated solutions by leveraging Data Science skills.
-Work closely with Technology teams on development of new capabilities to define requirements and priorities based on data analysis and business knowledge.
-Developing expertise in specific areas by leading analytical projects independently, while setting goals, providing benefit estimations, defining workflows, and coordinating timelines in advance.
-Providing updates to leadership, peers and other stakeholders that will simplify and clarify complex concepts and the results of analyses effectively with emphasis on the actionable outcomes and impact to business.
-Qualifications
-Master’s degree in Statistics, Analytics, or Data Science
-2-3 years of professional experience in solving problems using data-driven approach
-High proficiency in SQL. Experience with Python, R, Unix, Hadoop
-Collections and Digital Channels experience a plus
-Strong organizational skills and excellent follow-through
-Outstanding written, verbal and interpersonal communication skills
-High emotional intelligence, a can-do mentality and a creative approach to problem solving
-Experience with working in a technology environment
-We're a purpose-driven company whose beliefs are the foundation for how we conduct business every day. We hold ourselves to our One Team Behaviors which demand that we hold the highest ethical standards, to empower an open and diverse workplace, and strive to treat everyone who is touched by our business with dignity and respect. Our employees challenge the status quo, ask questions, and find solutions. We want to break down barriers to financial empowerment. Join us as we change the way the world defines financial freedom.
-PayPal provides equal employment opportunity (EEO) to all persons regardless of age, color, national origin, citizenship status, physical or mental disability, race, religion, creed, gender, sex, pregnancy, sexual orientation, gender identity and/or expression, genetic information, marital status, status with regard to public assistance, veteran status, or any other characteristic protected by federal, state or local law. In addition, PayPal will provide reasonable accommodations for qualified individuals with disabilities.",3.8,"PayPal
-3.8",Bangalore,-1,10000+ Employees,1998,Company - Public,Internet,Information Technology,$10+ billion (USD),-1
-Data Scientist,-1,"Are you interested in building the next-generation services that will redefine world wide compliance operations?
-
-
-We are looking for an Data scientist to be based in Bangalore, India with 4+ years of solid experience in solving complex problems using machine learning and data science. As an Data scientist, you will provide machine learning expertise that helps accelerate the business. You will build various data and machine learning models that help us innovate different ways to enhance customer experience. You will need to be entrepreneurial, wear many hats, and work in a highly collaborative environment. We like to move fast, experiment, iterate and then scale quickly, thoughtfully balancing speed and quality. Responsibilities include:
-
-·
-· Design, implement, test, deploy and maintain innovative data and machine learning solutions to accelerate our business.
-·
-· Create experiments and prototype implementations of new learning algorithms and prediction techniques
-·
-· Collaborate with scientists, engineers, product managers, and stockholders to design and implement software solutions for science problems
-·
-· Use machine learning best practices to ensure a high standard of quality for all of the team deliverables
-·
-
-
-
-
-Basic Qualifications
-
-· M.S. in Computer Science, Machine Learning, Operational Research, Statistics or a related quantitative field
-· 3+ years of hands-on experience in predictive modeling and analysis
-· 2+ years hands-on experience in Python, Perl, Scala, Java, C#, C++ or other similar languages
-· 1+ years professional experience in software development
-· Proficiency in model development, model validation and model implementation for large-scale applications
-· Ability to convey mathematical results to non-science stakeholders Strength in clarifying and formalizing complex problems
-· Superior verbal and written communication and presentation skills, ability to convey rigorous mathematical concepts and considerations to non-experts
-
-Preferred Qualifications
-
-
-
-· Ph.D. in Computer Science, Machine Learning, Operational Research, Statistics or a related quantitative field
-· 5+ years of practical experience applying ML to solve complex problems in an applied environment
-· Significant peer-reviewed scientific contributions in premier journals and conferences
-· Strong CS fundamentals in data structures, problem solving, algorithm design and complexity analysis
-· Experience with defining research and development practices in an applied environment
-· Proven track record in technically leading and mentoring scientists
-· Superior verbal and written communication and presentation skills, ability to convey rigorous mathematical concepts and considerations to non-experts
-· Excellent interpersonal communication with strong verbal / written English skills",4.3,"Amazon
-4.3",Bangalore,-1,10000+ Employees,1994,Company - Public,Internet,Information Technology,$10+ billion (USD),-1
+3.1",Bangalore,201 to 500 Employees,2009,Company - Private,Enterprise Software & Network Solutions,Information Technology,Unknown / Non-Applicable,417,1000,708.5,LAKh,BlueJeans,11,0,0,0
 Data Scientist,₹698K-₹960K (Glassdoor Est.),"Relocation Assistance Offered Within Country
 # 93100 - Mumbai, Maharashtra, India
 
@@ -124,7 +61,7 @@ Are you interested in working for Colgate-Palmolive? You can apply online and at
 Colgate-Palmolive is a leading global consumer products company, tightly focused on Oral Care, Personal Care, Home Care and Pet Nutrition. Colgate sells its products in over 200 countries and territories around the world under such internationally recognized brand names as Colgate, Palmolive, elmex, Tom’s of Maine, Sorriso, Speed Stick, Lady Speed Stick, Softsoap, Irish Spring, Protex, Sanex, Elta MD, PCA Skin, Ajax, Axion, Fabuloso, Soupline and Suavitel, as well as Hill’s Science Diet and Hill’s Prescription Diet.
 For more information about Colgate’s global business, visit the Company’s web site at http://www.colgatepalmolive.com. To learn more about Colgate Bright Smiles, Bright Futures® oral health education program, please visit http://www.colgatebsbf.com. To learn more about Hill's and the Hill’s Food, Shelter & Love program please visit http://www.hillspet.com. To learn more about Tom’s of Maine please visit http://www.tomsofmaine.com.
 Reasonable accommodation during the application process is available for persons with disabilities. Please contact Application_Accommodation@colpal.com with the subject ""Accommodation Request"" should you require accommodation.",4.2,"Colgate-Palmolive
-4.2",Mumbai,-1,10000+ Employees,1806,Company - Public,Consumer Products Manufacturing,Manufacturing,$10+ billion (USD),-1
+4.2",Mumbai,10000+ Employees,1806,Company - Public,Consumer Products Manufacturing,Manufacturing,$10+ billion (USD),698,960,829.0,LAKh,Colgate-Palmolive,214,1,0,1
 Data Scientist - Technology Development,₹350K-₹679K (Glassdoor Est.),"Relocation Level: Domestic
 
 Hiring Manager: Scott Gatzemeier
@@ -179,7 +116,7 @@ Join an inclusive team passionate about one thing: using their expertise in the 
 All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, veteran or disability status.
 
 Keywords: Hyderabad || Andhra Pradesh (IN-AP) || India (IN) || Technology Development || Experienced || Regular || Engineering || #LI-RR1 || Tier 4 ||",3.6,"Micron Technology
-3.6",Hyderābād,-1,10000+ Employees,1978,Company - Public,Computer Hardware & Software,Information Technology,$10+ billion (USD),-1
+3.6",Hyderābād,10000+ Employees,1978,Company - Public,Computer Hardware & Software,Information Technology,$10+ billion (USD),350,679,514.5,LAKh,Micron Technology,42,1,0,1
 Senior / Data Science Engineer,"₹490K-₹1,094K (Glassdoor Est.)","Gainsight™ is a venture-backed, fast-growing tech company revolutionizing Customer Success for businesses. The Customer Success company helps businesses grow faster by reducing churn, increasing upsell, and driving customer advocacy. Gainsight provides a complete, end-to-end Customer Success solution through its services and technology. The industry-leading platform helps companies manage customer relationships effectively, track customer health, and transform the way organizations orient around the customer. Gainsight is the platform of choice for many leading companies like Box, Adobe, and Workday. The company has been recognized as one of the top 100 private cloud companies in the world by Forbes, one of the fastest-growing private companies in America by Inc. Magazine, and as one of 20 Great Workplaces in Tech by Fortune Magazine. Gainsight's CEO, Nick Mehta, has been recognized as one of the Top SaaS CEOs in America. The company has offices in California, Phoenix, St. Louis, London, Israel, and India.
 
 About The Job Role
@@ -220,34 +157,7 @@ Child-like Joy: We aspire to experience passion, optimism, and laughter in every
 Shoshin: We believe in a beginner's mind, and that learning comes from everywhere.
 Stay Thirsty, My Friends: We believe in an internally-driven strive for greatness.
 Individuals seeking employment at Gainsight are considered without regard to race, color, religion, national origin, age, sex, marital status, ancestry, physical or mental disability, veteran status, gender identity, or sexual orientation.",4.2,"Gainsight
-4.2",Hyderābād,-1,501 to 1000 Employees,2009,Company - Private,Enterprise Software & Network Solutions,Information Technology,Unknown / Non-Applicable,-1
-Data Scientist Intern,-1,"Amazon's looking for Data Scientist to optimize one of the most complex logistics systems in the world. Academic and/or practical background in Computer Science, Engineering, Operations Research, or Process Control are particularly relevant for this position. Experience in the integration of model-based engineering tools and/or multidisciplinary analysis & optimization is also a plus.
-Major Responsibilities:
-· Use data analyses and statistical techniques to develop solutions to improve customer experience and to guide business decision making
-· Identify predictors and causes of business related problems and implement novel approaches related to forecasting and prediction
-· Identify, develop, manage, and execute analyses to uncover areas of opportunity and present written business recommendations
-· Collaborate with multiple teams as a leader of quantitative analysis and where you develop solutions that utilize the highest standards of analytical rigor and data integrity
-· Analyze and solve business problems at their root
-
-Basic Qualifications
-
-· Pursuing Masters or equivalent advanced degree from a top tier Technology school
-· Record of delivering large analytical solutions with business impact
-· Experience on R/SAS/Matlab and SQL
-· Excellent Microsoft Office skills, including a strong working knowledge of Excel
-· Problem solving ability and passion for big data
-· Excellent communication and data presentation skills
-· Fluent written and spoken English
-
-Preferred Qualifications
-
-Masters or equivalent advanced degree in Computer Science, Computer Engineering, Statistics, Mathematics or related technical discipline. Hands-on experience and project based learning in computer science, engineering or mathematics is preferred.
-• Academic experience in manipulating/transforming data, model selection, model training, cross-validation and deployment at scale.
-• Academic or Project Experience with Machine and Deep Learning toolkits such as MXNet, TensorFlow, Caffe and PyTorch.
-• Academic Experience with Big Data platforms like Apache Spark and Hadoop.
-• Familiarity with data processing with Python, R & SQL.
-• Familiarity with AWS services related to AI/ML highly desirable, particularly Amazon EMR, AWS Lambda, SageMaker, Machine Learning, IoT, Amazon DynamoDB, Amazon S3, Amazon EC2 Container Service, Green Grass etc.",4.3,"Amazon
-4.3",Bangalore,-1,10000+ Employees,1994,Company - Public,Internet,Information Technology,$10+ billion (USD),-1
+4.2",Hyderābād,501 to 1000 Employees,2009,Company - Private,Enterprise Software & Network Solutions,Information Technology,Unknown / Non-Applicable,490,1094,792.0,LAKh,Gainsight,11,1,0,1
 Business Analyst - Data Science,₹479K-₹700K (Glassdoor Est.),"With a startup spirit and 90,000+ curious and courageous minds, we have the expertise to go deep with the world’s biggest brands—and we have fun doing it. Now, we’re calling all you rule-breakers and risk-takers who see the world differently, and are bold enough to reinvent it. Come, transform with us.
 Are you the one we are looking for?
 We are inviting applications for the role of BA, Data Science
@@ -268,7 +178,7 @@ Analytical/ Problem Solving attitude with superb communication & interpersonal s
 Customer centric approach Proven proficiency with written and oral English language
 Strong attention to detail.
 Genpact is an Equal Opportunity Employer and considers applicants for all positions without regard to race, color, religion or belief, sex, age, national origin, citizenship status, marital status, military/veteran status, genetic information, sexual orientation, gender identity, physical or mental disability or any other characteristic protected by applicable laws. Genpact is committed to creating a dynamic work environment that values diversity and inclusion, respect and integrity, customer focus, and innovation. For more information, visit www.genpact.com. Follow us on Twitter, Facebook, LinkedIn, and YouTube.",3.8,"Genpact
-3.8",Bangalore,-1,10000+ Employees,1997,Company - Public,IT Services,Information Technology,$2 to $5 billion (USD),-1
+3.8",Bangalore,10000+ Employees,1997,Company - Public,IT Services,Information Technology,$2 to $5 billion (USD),479,700,589.5,LAKh,Genpact,23,1,0,1
 Data Scientist,₹480K-₹720K (Glassdoor Est.),"Location
 
 
@@ -318,7 +228,7 @@ Data Science
 Ref Number
 
 VR-53471",4.2,"Luxoft
-4.2",Pune,-1,10000+ Employees,2000,Company - Public,IT Services,Information Technology,Unknown / Non-Applicable,-1
+4.2",Pune,10000+ Employees,2000,Company - Public,IT Services,Information Technology,Unknown / Non-Applicable,480,720,600.0,LAKh,Luxoft,20,1,0,1
 Data Scientist,₹290K-₹774K (Glassdoor Est.),"What you’ll be doing...
 
 At BlueJeans, we’re transforming the way people meet by creating a human connection in every experience. Together, we’re bringing video to everyone, regardless of location or device, including mobile, desktop, or room systems. We work with thousands of companies worldwide to upgrade everyday meetings, large-scale events, and social network broadcasts by replacing traditional web conferencing with face-to-face video communication. All our customers have one trait in common: they understand the benefits to bringing their employees, leaders, and partners closer together. Since 2009, we have raised $175M in funding led by Accel Partners, Battery Ventures, NEA, and Norwest Venture Partners.
@@ -348,90 +258,7 @@ Verizon is a leading provider of technology, communications, information and ent
 Diversity and Inclusion at Verizon
 
 At Verizon, we know that diversity makes us stronger. We are committed to a collaborative, inclusive environment that encourages authenticity and fosters a sense of belonging. We strive for everyone to feel valued, connected, and empowered to reach their potential and contribute their best. Check out our diversity and inclusion page to learn more.",3.9,"Verizon
-3.9",Bangalore,-1,10000+ Employees,2000,Company - Public,Telecommunications Services,Telecommunications,$10+ billion (USD),-1
-Senior Data Scientist,-1,"Job Description
-
-Posting Title: Senior Data Scientist
-
-At VMware, we are committed to helping our people grow professionally. Our talented employees exemplify our shared values and continue to drive our company to new heights. If you see a position that might be right for you, we encourage you to apply and continue to be a part of our EPIC2 community.
-
-VMware is the leader in virtualization and cloud infrastructure solutions that enable our more than 350,000 enterprise and SMB customers to thrive in the Cloud era. A pioneer in the use of virtualization and automation technologies, VMware simplifies IT complexity across the entire data center to the virtual workplace, empowering customers with solutions in the software-defined data center to hybrid cloud computing and the mobile workspace.
-
-Our team of 20,000+ people working in 50+ locations worldwide is committed to building a community where great people want to work long term by living our values of passion, innovation, execution, teamwork, active learning and giving back. If you are ready to accelerate, innovate and lead, join us as we challenge constraints and problem solve for tomorrow today.
-
-Job Description:VMware IT Data Engineering & Analytics team is seeking a highly motivated, experienced Senior Data Scientist within Data & Analytics group located in Bangalore, India. This position is responsible for hands on development work on all aspects of AI ML, data provisioning, ML modeling, performance tuning and optimization. The candidate will work closely with both IT Data Engineering & business teams to identify and implement Business IT data solutions
-
-Qualifications & Skills
-Bachelors degree or equivalent required with preference for Computer Science or Engineering. MS degree would be highly desirable
-Be able to build hands-on develop propensity models (to buy, to sell, to respond), lead nurture, segmentation, cross-sell/up-sell models, forecasting using R, SAS, Python or any other language/Machine learning libraries
-Working experience on Deep Learning using Keras, PyTorch, Tensor flow would be an advantage
-Strong Python & PySpark programming skills
-Experience with Presto would be highly desirable.
-Experience productizing Machine Learning algorithms and/or high-volume data processing
-Exposure in a wide variety of database technologies, from Postgres, SQLServer to NoSQL systems such as MongoDB, Cloudant, Cassandra, and/or Elasticsearch
-Desired Qualifications:
-Demonstrable experience designing scalable and highly available distributed systems
-Proficiency in Java. Experience with multiple languages a plus
-Advertised Location Bangalore, India
-
-Category : Engineering and Technology
-Subcategory: Software Engineering
-Experience: Manager and Professional
-Full Time/ Part Time: Full Time
-Posted Date: 2020-10-05
-
-VMware Company Overview: At VMware, we believe that software has the power to unlock new opportunities for people and our planet. We look beyond the barriers of compromise to engineer new ways to make technologies work together seamlessly. Our cloud, mobility, and security software form a flexible, consistent digital foundation for securely delivering the apps, services and experiences that are transforming business innovation around the globe. At the core of what we do are our people who deeply value execution, passion, integrity, customers, and community. Shape whats possible today at http://careers.vmware.com.
-
-Equal Employment Opportunity Statement: VMware is an Equal Opportunity Employer and Prohibits Discrimination and Harassment of Any Kind: VMware is committed to the principle of equal employment opportunity for all employees and to providing employees with a work environment free of discrimination and harassment. All employment decisions at VMware are based on business needs, job requirements and individual qualifications, without regard to race, color, religion or belief, national, social or ethnic origin, sex (including pregnancy), age, physical, mental or sensory disability, HIV Status, sexual orientation, gender identity and/or expression, marital, civil union or domestic partnership status, past or present military service, family medical history or genetic information, family or parental status, or any other status protected by the laws or regulations in the locations where we operate. VMware will not tolerate discrimination or harassment based on any of these characteristics. VMware encourages applicants of all ages. Vmware will provide reasonable accommodation to employees who have protected disabilities consistent with local law.",4.3,"VMware
-4.3",Bangalore,-1,10000+ Employees,1998,Company - Public,Computer Hardware & Software,Information Technology,$5 to $10 billion (USD),-1
-Senior Data Scientist,-1,"Relocation Assistance Offered Within Country
-# 92240 - Mumbai, Maharashtra, India
-
-What is the PURPOSE of your role?
-
-This role is encouraged to apply strong expertise in artificial intelligence through use of machine learning, data mining, and information retrieval to design, prototype and build next generation sophisticated analytics engines and services. This role will work to define the technical problem statement and hypothesis to test; develop efficient and accurate analytical models that mimic business decisions and incorporate them into analytical data products or tools with the support of a multi-functional team. lead a team of data scientists to identify the right analytic solution to run various use cases across functions.
-
-Core responsibilities of this role
-
-To Work with translators to identify business problems that can be addressed by analytics
-Participates in diagnostic & use case roadmap creation
-Optimally communicate the analytics approach and how it will meet and address objectives to business partners
-Direct a team of data scientists in identifying the right analytic solution for individual use cases
-Advocate and educate on the value of data driven decision making focusing on the “how and why” of solving problems
-Defines data lifecycles, including data sources, frequency and process for ongoing model upgrades
-Collaborates with the team to shape use cases and guide them towards defining data standards and identifying new data sources
-Integrating work into applications and tools with data engineers, business leads, analysts and developers
-Create repeatable, interpretable, multifaceted and scalable models that are seamlessly incorporated into analytic data products
-Engineer features by using your business acumen that will improve analytical models and are easy to interpret
-Explains principles and approaches to senior management in a non-technical manner
-Demonstrable ability to plan model upgrades with takeaways from field
-Takes an active role in crafting analytical (e.g., code libraries) and data (e.g., external or partnership based data) assets
-What expertise are we looking for?
-
-Must have
-Academics: Bachelor’s in Data Science, Computer Science, Engineering, Statistics
-Prior Experience:
-Minimum 6+ years’ experience in programming Languages - Python and/or R
-Must have experience in running use cases in the sales analytics/ eCommerce domain
-
-Technology Expertise
-We need SQL implementations (PostgreSQL, MySQL, Oracle, DB2)
-Sophisticated proficiency on ML techniques - clustering, decision tree learning, naïve Bayes, support vector machines, Q-learning, temporal difference, adversarial networks, and neural networks
-Basic proficiency of data visualization techniques & tools - Visualizing complex insights using Plotly, matplotlib, ggplot2, etc.; experience with dash boarding tools desired (e.g., Shiny, Dash, Tableau)
-Basic proficiency of data engineering tools & techniques.
-Building data pipeline on GCP
-Frameworks including TensorFlow, Theano, CNTK, scikit-learn, Caffe, Keras, Spark MLlib
-Statistical Tools & Concepts:
-Solid grasp concepts including descriptive analysis, experimental design, Bayesian statistics, sub-setting, and regression.
-Solid grasp of statistical and data mining techniques including generalized linear model/regression, random forest, boosting, trees, text mining, social network analysis, dimensionality reduction algorithms
-
-Equal Opportunity Employer
-Colgate is an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity, sexual orientation, national origin, ethnicity, age, disability, marital status, veteran status (United States positions), or any other characteristic protected by law.
-Are you interested in working for Colgate-Palmolive? You can apply online and attach all relevant documents such as a cover letter and resume or CV. Applications received by e-mail are not considered in the selection process. Become part of our team. We look forward to your application.
-Colgate-Palmolive is a leading global consumer products company, tightly focused on Oral Care, Personal Care, Home Care and Pet Nutrition. Colgate sells its products in over 200 countries and territories around the world under such internationally recognized brand names as Colgate, Palmolive, elmex, Tom’s of Maine, Sorriso, Speed Stick, Lady Speed Stick, Softsoap, Irish Spring, Protex, Sanex, Elta MD, PCA Skin, Ajax, Axion, Fabuloso, Soupline and Suavitel, as well as Hill’s Science Diet and Hill’s Prescription Diet.
-For more information about Colgate’s global business, visit the Company’s web site at http://www.colgatepalmolive.com. To learn more about Colgate Bright Smiles, Bright Futures® oral health education program, please visit http://www.colgatebsbf.com. To learn more about Hill's and the Hill’s Food, Shelter & Love program please visit http://www.hillspet.com. To learn more about Tom’s of Maine please visit http://www.tomsofmaine.com.
-Reasonable accommodation during the application process is available for persons with disabilities. Please contact Application_Accommodation@colpal.com with the subject ""Accommodation Request"" should you require accommodation.",3.1,"Colgate-Palmolive
-3.1",Mumbai,-1,10000+ Employees,1806,Company - Public,Consumer Products Manufacturing,Manufacturing,$10+ billion (USD),-1
+3.9",Bangalore,10000+ Employees,2000,Company - Public,Telecommunications Services,Telecommunications,$10+ billion (USD),290,774,532.0,LAKh,Verizon,20,0,0,0
 SSE – Machine Learning Engineer,₹498K-₹730K (Glassdoor Est.),"Full Time
 Bengaluru
 Posted 2 months ago
@@ -485,7 +312,7 @@ Strong Programming skills
 Reports to: Manager – Engineering – Software
 
 To apply for this job email your details to talent@wibmo.com",2.9,"Wibmo
-2.9",Bangalore,-1,501 to 1000 Employees,1999,Company - Private,Computer Hardware & Software,Information Technology,Unknown / Non-Applicable,-1
+2.9",Bangalore,501 to 1000 Employees,1999,Company - Private,Computer Hardware & Software,Information Technology,Unknown / Non-Applicable,498,730,614.0,LAKh,Wibmo,21,1,0,1
 Data Scientist I,₹437K-₹574K (Glassdoor Est.),"26-Nov-2020
 
 Job ID
@@ -503,7 +330,7 @@ Job ID
 
 Position Title
 Data Scientist I",4.1,"Novartis
-4.1",Hyderābād,-1,10000+ Employees,1996,Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,$10+ billion (USD),-1
+4.1",Hyderābād,10000+ Employees,1996,Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,$10+ billion (USD),437,574,505.5,LAKh,Novartis,24,1,0,1
 Junior Data Analyst,₹336K-₹412K (Glassdoor Est.),"Role: Junior Data Analyst
 
 Location: Gurgaon, India
@@ -559,7 +386,7 @@ We operate in a fast paced, dynamic environment where everyone on the team is co
 to facilitate growth to our bottom line. We reward hard work, support career development, offer comprehensive benefits, and foster a fun and friendly work environment.
 
 We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status",3.4,"GroundTruth
-3.4",Gurgaon,-1,201 to 500 Employees,2009,Company - Private,-1,-1,Less than $1 million (USD),-1
+3.4",Gurgaon,201 to 500 Employees,2009,Company - Private,-1,-1,Less than $1 million (USD),336,412,374.0,LAKh,GroundTruth,11,1,0,1
 Applied Scientist,₹767K-₹900K (Glassdoor Est.),"Amazon MENA comprises of UAE, KSA and EGY markets. In order to create the best MENA customer experience in terms of selection, delivery experience, MENA data services team is looking for energetic individuals to come, join and work with us. We will together solve the interesting problems to launch new products and programs:
 
 You will be expected to:
@@ -587,7 +414,7 @@ Preferred Qualifications
 · Strong personal interest in learning, researching, and creating new technologies with high commercial impact
 · Experience with defining organizational research and development practices in an industry setting
 · Proven track in leading, mentoring and growing teams of scientists",4.3,"Amazon
-4.3",Noida,-1,10000+ Employees,1994,Company - Public,Internet,Information Technology,$10+ billion (USD),-1
+4.3",Noida,10000+ Employees,1994,Company - Public,Internet,Information Technology,$10+ billion (USD),767,900,833.5,LAKh,Amazon,26,1,0,1
 Assistant Manager - Data Scientist,₹552K-₹881K (Glassdoor Est.),"With a startup spirit and 90,000+ curious and courageous minds, we have the expertise to go deep with the world’s biggest brands—and we have fun doing it. Now, we’re calling all you rule-breakers and risk-takers who see the world differently, and are bold enough to reinvent it. Come, transform with us.
 Are you the one we are looking for?
 We are inviting applications for the role of AM, Data Scientist
@@ -616,7 +443,7 @@ Should possess good interpersonal skills
 Innovative and always looking for continuous improvement
 Communicate with clients on day-to-day basis to discuss project progress
 Genpact is an Equal Opportunity Employer and considers applicants for all positions without regard to race, color, religion or belief, sex, age, national origin, citizenship status, marital status, military/veteran status, genetic information, sexual orientation, gender identity, physical or mental disability or any other characteristic protected by applicable laws. Genpact is committed to creating a dynamic work environment that values diversity and inclusion, respect and integrity, customer focus, and innovation. For more information, visit www.genpact.com. Follow us on Twitter, Facebook, LinkedIn, and YouTube.",3.8,"Genpact
-3.8",Bangalore,-1,10000+ Employees,1997,Company - Public,IT Services,Information Technology,$2 to $5 billion (USD),-1
+3.8",Bangalore,10000+ Employees,1997,Company - Public,IT Services,Information Technology,$2 to $5 billion (USD),552,881,716.5,LAKh,Genpact,23,1,0,1
 Data Scientist-1,₹597K-₹763K (Glassdoor Est.),"We are looking for an analyst to develop PayPals Risk strategy within the Next-Generation Platforms & Strategic Partners portfolio. This portfolio is comprised of PayPals newest leading-edge payments solutions (including new form factors, in-store payments, and payment tokens), as well as customized experiences developed for the companys highest-priority strategic partnerships.
 
 PayPals Next-Generation Platforms Consumer Risk team is responsible for assessing and managing buyer-side financial risk exposures for this $8 billion portfolio (including identity theft, stolen financials, account takeover, and credit risk), as well as developing and implementing the policies, treatments, and experiences related to the management of these exposures. The team is also responsible for partnering with the corresponding Business Units to align with and influence their strategic priorities, educate business partners about Risk management principles, and collaboratively optimize the Risk treatments and experiences for these unique products and partners.
@@ -632,27 +459,7 @@ Polished communication skills risk analysts need to collaborate cross-functional
 Can-do attitude, team player, energetic personality, ability to work well under pressure in a fast-paced and constantly changing environment to meet deadlines. The successful risk analyst is a self-starter who has the resilience to learn from their mistakes and reach their true potential.
 An innate intellectual curiosity, and a willingness to build awareness of current payments industry and risk management best practices. PayPal is constantly innovating by introducing new products and entering new markets, so successful risk analysts on this team must quickly get up speed on new content areas.
 Bachelors degree with 4+ years of experience, MS degree with 2+ year of experience",3.8,"Paypal
-3.8",Bangalore,-1,10000+ Employees,1998,Company - Public,Internet,Information Technology,$10+ billion (USD),-1
-Data Science Manager (Staff Data Scientist I/Staff Data Scientist II),-1,"Title: Staff Data Scientist I/Staff Data Scientist II
-
-Location: Mumbai
-
-Technical Skills:
-
-Python, Sql, Data Visualization, Big Data, Machine Learning
-
-Experience: 5 to 10 Years
-
-Job Description:
-You will be working with Principal Data Scientist as an individual contributor within research & innovation group and will be managing a small team of data scientists and collaborate with data engineers.
-You should be proficient in Python (data manipulation, scientific computing, applied statistics, machine learning, and data visualization), in MySQL and NoSQL.
-You will work with wide variety of Visible Alpha’s commercial as well as operational datasets on both internal and client-facing projects. You will partner with stakeholders across the organization, build data analystics tool for the organization, communicate findings to diverse audiances.
-You will work on all parts of data science workflow; exploratory analysis of new datasets, create/monitor KPIs and build dashboards for the organization, build predictive models and work with engineers for deployment.
-Desired Qualifications:
-Advanced degree in a computational field and/or Independent research experience as a data scientist.
-Experience managing small teams.
-Familiary with financial datasets, equities market, fundamental research.",4.2,"Visible Alpha
-4.2",Mumbai,-1,501 to 1000 Employees,2011,Company - Private,Financial Analytics & Research,Finance,Unknown / Non-Applicable,-1
+3.8",Bangalore,10000+ Employees,1998,Company - Public,Internet,Information Technology,$10+ billion (USD),597,763,680.0,LAKh,Paypal,22,1,0,1
 Assistant Vice President - Data Scientist,₹535K-₹735K (Glassdoor Est.),"With a startup spirit and 90,000+ curious and courageous minds, we have the expertise to go deep with the world’s biggest brands—and we have fun doing it. Now, we’re calling all you rule-breakers and risk-takers who see the world differently, and are bold enough to reinvent it. Come, transform with us.
 
 Transformation happens here. Come, be a part of our exciting journey!
@@ -677,7 +484,7 @@ Masters or Doctorate in a relevant domain.
 Previously worked on business analytics problems like customer churn, lifetime value estimation, targeted marketing, personalized offers, etc.
 Experienced in crafting and analyzing A/B tests.
 Genpact is an Equal Opportunity Employer and considers applicants for all positions without regard to race, color, religion or belief, sex, age, national origin, citizenship status, marital status, military/veteran status, genetic information, sexual orientation, gender identity, physical or mental disability or any other characteristic protected by applicable laws. Genpact is committed to creating a dynamic work environment that values diversity and inclusion, respect and integrity, customer focus, and innovation. For more information, visit www.genpact.com. Follow us on Twitter, Facebook, LinkedIn, and YouTube.",3.8,"Genpact
-3.8",Bangalore,-1,10000+ Employees,1997,Company - Public,IT Services,Information Technology,$2 to $5 billion (USD),-1
+3.8",Bangalore,10000+ Employees,1997,Company - Public,IT Services,Information Technology,$2 to $5 billion (USD),535,735,635.0,LAKh,Genpact,23,1,0,1
 Analytics Consultant - Supply Chain,₹600K-₹755K (Glassdoor Est.),"Job
 Description
 
@@ -731,7 +538,7 @@ Designation
 Analytics Consultant
 
 Apply",3.7,"Tredence
-3.7",Bangalore,-1,501 to 1000 Employees,2013,Company - Private,Consulting,Business Services,$25 to $50 million (USD),-1
+3.7",Bangalore,501 to 1000 Employees,2013,Company - Private,Consulting,Business Services,$25 to $50 million (USD),600,755,677.5,LAKh,Tredence,7,0,0,0
 Lead Data Scientist,₹528K-₹840K (Glassdoor Est.),"Who We Are
 Honeywell is a Fortune 100 company with global sales surpassing $40B and has been one of Fortunes Most Admired Companies for over a decade. Through innovation, the Company brings together the physical and digital world to tackle some of the toughest societal and business problems making the world a more productive, safe, and sustainable place.
 The business is organized into five primary groups: Aerospace, Buildings, Performance Materials and Technologies, Safety and Productivity Solutions, and the Connected Enterprise. Honeywell specializes in things that are critically connected - beyond smart phones and laptops, we make the kinds of connections that keep cities working, planes flying, plants running, and workers safe. Our unique capabilities, over a century in the making, bring together data, expertise, and technology to connect people, processes, and assets.
@@ -773,7 +580,7 @@ JOB ID: req248801
 Category: Engineering
 Location: HW Camp II,Bldgs 9A&9B,Plot C2,RMZ Ecoworld,Varturhobli,Sarjapur Marathahalli Outer Ring Road,Bangalore,KARNATAKA,560103,India
 Exempt",3.7,"Honeywell
-3.7",Bangalore,-1,10000+ Employees,1885,Company - Public,Computer Hardware & Software,Information Technology,$10+ billion (USD),-1
+3.7",Bangalore,10000+ Employees,1885,Company - Public,Computer Hardware & Software,Information Technology,$10+ billion (USD),528,840,684.0,LAKh,Honeywell,135,1,0,1
 Data Scientist,₹443K-₹697K (Glassdoor Est.),"Position Title
 Data Scientist
 
@@ -838,36 +645,7 @@ Nov Hltcr Shared Services Ind
 
 Shift Work
 No",4.1,"Novartis
-4.1",Hyderābād,-1,10000+ Employees,1996,Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,$10+ billion (USD),-1
-Senior Data Analyst,-1,"Senior Data Analyst, ED&A ICC
-Nike does more than outfit the world's best athletes. We are a place to explore potential, obliterate boundaries, and push out the edges of what can be. We're looking for people who can grow, think, dream and create. We thrive in a culture that embraces diversity and rewards imagination. We seek achievers, leaders and visionaries. At Nike, it's about bringing what you have to a challenging and constantly evolving game.
-Now, more than ever, Technology needs to respond quickly to turn market disruptions into opportunities for our world-class brand. To achieve this, we must continue to develop our Enterprise Analytics, Data Science & Machine Learning capabilities and team to ensure we’re maximizing the power of the Nike enterprise in the analytics/machine learning space and managing data as a competitive advantage.
-If you’re ready to innovate and be a driving force for building solutions Enterprise Data and Analytics organization, come join us now! You will be part of an organization that is revolutionizing Nike technology platforms and architecting a data and analytics landscape that is simplified, modern, flexible and will ultimately enable Nike on its journey to 2020 and beyond.
-Responsibilities:
-Build and deploy forecasts and report business key performance indicators (KPIs) for senior leadership and partner with the stakeholders to deliver relevant analysis and insights.
-Write, drive, and prioritize thoughtful and detailed functional specifications for real-time operational and performance analytics using opensource streaming technologies
-Deploy reporting and analytics within a focused area of the Nike business value stream to enable data driven business decisions that will drive performance and lead to the accomplishment of annual goals
-Deploy quantitative research, casual inference and predictive models to understand and optimize drivers of growth and performance
-Project manage and deliver large analytics projects with multiple business stakeholders on firm deadlines
-Utilize expertise with business partners to collaborate with key partners to understand requirements, drive knowledge into action and support data driven decision making
-Document and communicate systems/analytics changes to the business, translating complex functionality into business relevant language
-Support and troubleshoot issues (process & system), identify root cause, and proactively recommend sustainable corrective actions
-Skills:
-Bachelor’s Degree in Computer Science, MIS, other quantitative disciplines, or related fields
-7+ years of relevant analytical experiences that can translate into defining strategic vision into requirements and working with the best engineers, product managers, and data scientists
-Ability to conduct data analysis, develop and test hypothesis and deliver insights with minimal supervision
-Experience identifying and define KPI’s and cohorts for apps, traffic, user retention
-Exceptional SQL skills
-Experience with modern visualization tool stack, such as: Kibana, Tableau, Power BI, d3js
-Hands-on experience working with streaming data sources such as Kafka, Kinesis
-Experience with open-source, big data and cloud infrastructure such as AWS
-Experience writing detailed technical specifications describing requirements for data movement, transformation, storage, quality checks, and access latency
-Incredible attention to detail, with structured problem-solving approach
-Excellent communications skills (written and verbal)
-Experience with clickstream data
-Experience with agile development methodologies
-Experience with data transformation and BI tools
-Experience with retail or ecommerce domains is a plus",-1,Talent500,Bangalore,-1,-1,-1,-1,-1,-1,-1,-1
+4.1",Hyderābād,10000+ Employees,1996,Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,$10+ billion (USD),443,697,570.0,LAKh,Novartis,24,1,0,1
 Senior Data Scientist,₹362K-₹717K (Glassdoor Est.),"Senior Data Scientist
 The Group: Morningstar’s Research group provides independent analysis on individual securities, funds, markets, and portfolios. The Research group also provides data on hundreds of thousands of investment offerings, including stocks, mutual funds, and similar vehicles, along with real-time global market data on millions of equities, indexes, futures, options, commodities, and precious metals, in addition to foreign exchange and Treasury markets. Morningstar is one of the largest independent sources of fund, equity, and credit data and research in the world, and our advocacy for investors’ interests is the foundation of our company.
 
@@ -913,4 +691,4 @@ Intermediate knowledge of statistical methods is desirable
 Morningstar is an equal opportunity employer.
 
 I10_MstarIndiaPvtLtd Morningstar India Private Ltd. (Delhi) Legal Entity",4.1,"Morningstar
-4.1",Mumbai,-1,5001 to 10000 Employees,1984,Company - Public,Financial Analytics & Research,Finance,$1 to $2 billion (USD),-1
+4.1",Mumbai,5001 to 10000 Employees,1984,Company - Public,Financial Analytics & Research,Finance,$1 to $2 billion (USD),362,717,539.5,LAKh,Morningstar,36,1,0,1
