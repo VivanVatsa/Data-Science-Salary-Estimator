@@ -116,17 +116,17 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
                     './/div[@class="tab" and @data-tab-type="overview"]'
                 ).click()
 
-                # try:
+                try:
                 # <div class="infoEntity">
                 #    <label>Headquarters</label>
                 #    <span class="value">San Francisco, CA</span>
                 # </div>
 
-                #     headquarters = driver.find_element_by_xpath(
-                #         './/div[@class="infoEntity"]//label[text()="Headquarters"]//following-sibling::*'
-                #     ).text
-                # except NoSuchElementException:
-                #     headquarters = -1
+                    headquarters = driver.find_element_by_xpath(
+                        './/div[@class="infoEntity"]//label[text()="Headquarters"]//following-sibling::*'
+                    ).text
+                except NoSuchElementException:
+                    headquarters = -1
 
                 try:
                     size = driver.find_element_by_xpath(
@@ -179,7 +179,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
                     competitors = -1
 
             except NoSuchElementException:  # Rarely, some job postings do not have the "Company" tab.
-                # headquarters = -1
+                headquarters = -1
                 size = -1
                 founded = -1
                 type_of_ownership = -1
@@ -189,7 +189,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
                 competitors = -1
 
             if verbose:
-                # print("Headquarters: {}".format(headquarters))
+                print("Headquarters: {}".format(headquarters))
                 print("Size: {}".format(size))
                 print("Founded: {}".format(founded))
                 print("Type of Ownership: {}".format(type_of_ownership))
@@ -206,7 +206,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
                 "Rating": rating,
                 "Company Name": company_name,
                 "Location": location,
-                # "Headquarters": headquarters,
+                "Headquarters": headquarters,
                 "Size": size,
                 "Founded": founded,
                 "Type of ownership": type_of_ownership,
