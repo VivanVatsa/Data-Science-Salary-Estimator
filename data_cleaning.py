@@ -30,7 +30,12 @@ df["average-salary"] = (df.min_salary + df.max_salary) / 2
 df["currency"] = "LAKh"
 # df
 df
+
 # company name text only
+#%%
+df["company_txt"] = df.apply(lambda x: x["Company Name"]
+                             if x["Rating"] < 0 else x["Company Name"][:-5])
+
 # state field
 # age of company
 # parsing of job description (PYTHON)
