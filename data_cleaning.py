@@ -24,9 +24,8 @@ minus_Kd = salary.apply(lambda x: x.replace("K", "").replace("₹", ""))
 minus_Kd
 
 # %%
-df["hourly"] = df["Salary Estimate"].apply(lambda x: 1
-                                           if "per hour" in x.lower() else 0)
-
-df
+# df["hourly"] = df["Salary Estimate"].apply(lambda x: 1
+#                                            if "per hour" in x.lower() else 0)
+# df
 
 # %%

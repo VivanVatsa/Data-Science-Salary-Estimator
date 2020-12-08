@@ -116,17 +116,17 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
                     './/div[@class="tab" and @data-tab-type="overview"]'
                 ).click()
 
-                try:
-                    # <div class="infoEntity">
-                    #    <label>Headquarters</label>
-                    #    <span class="value">San Francisco, CA</span>
-                    # </div>
+                # try:
+                # <div class="infoEntity">
+                #    <label>Headquarters</label>
+                #    <span class="value">San Francisco, CA</span>
+                # </div>
 
-                    headquarters = driver.find_element_by_xpath(
-                        './/div[@class="infoEntity"]//label[text()="Headquarters"]//following-sibling::*'
-                    ).text
-                except NoSuchElementException:
-                    headquarters = -1
+                #     headquarters = driver.find_element_by_xpath(
+                #         './/div[@class="infoEntity"]//label[text()="Headquarters"]//following-sibling::*'
+                #     ).text
+                # except NoSuchElementException:
+                #     headquarters = -1
 
                 try:
                     size = driver.find_element_by_xpath(
@@ -206,7 +206,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
                 "Rating": rating,
                 "Company Name": company_name,
                 "Location": location,
-                "Headquarters": headquarters,
+                # "Headquarters": headquarters,
                 "Size": size,
                 "Founded": founded,
                 "Type of ownership": type_of_ownership,
