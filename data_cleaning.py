@@ -33,9 +33,11 @@ df
 
 # company name text only
 #%%
-df["company_txt"] = df.apply(lambda x: x["Company Name"][:-5])
+df["company_txt"] = df["Company Name"].apply(lambda x: x.split("\n")[0])
+df
 
 # state field
+
 # age of company
 # parsing of job description (PYTHON)
 
