@@ -1,4 +1,4 @@
-#%%
+# %%
 # from numpy.core.fromnumeric import size
 import pandas as pd
 
@@ -11,7 +11,7 @@ df
 # -------------------
 # salary parsing
 
-#%%
+# %%
 salary = df["Salary Estimate"].apply(lambda x: x.split("(")[0])
 # salary
 minus_Kd = salary.apply(
@@ -32,15 +32,15 @@ df["currency"] = "LAKh"
 df
 
 # company name text only
-#%%
+# %%
 df["company_txt"] = df["Company Name"].apply(lambda x: x.split("\n")[0])
 df
 
 # state field
-#%%
+# %%
 df.Location.value_counts()
 
-#%%
+# %%
 # 2 ways to delete undesired column from the data frame
 # 1.
 # del df["Headquarters"]
@@ -48,19 +48,19 @@ df.Location.value_counts()
 df = df.drop("Competitors", 1)
 df
 # age of company
-#%%
+# %%
 
 df["age"] = df.Founded.apply(lambda x: x if x < 1 else 2020 - x)
 df
 
 # parsing of job description (PYTHON)
-#%%
+# %%
 # will check all job descriptions keyword - analysis
 # python
 df["analysis"] = df["Job Description"].apply(lambda x: 1
                                              if "analysis" in x.lower() else 0)
 df.analysis.value_counts()
-#%%
+# %%
 df["Job Description"][0]
 # df["hourly"] = df["Salary Estimate"].apply(lambda x: 1
 #                                            if "per hour" in x.lower() else 0)
