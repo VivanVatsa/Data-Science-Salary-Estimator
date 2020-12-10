@@ -191,3 +191,16 @@ for i in df_cat[["Location", "company_txt", "Industry"]].columns:
     plt.show()
 
 # %%
+# starting pivot tables
+
+pd.pivot_table(df, index="job_simp", values="average-salary")
+
+# %%
+pd.pivot_table(df, index=["job_simp", "seniority"], values="average-salary")
+
+# %%
+df.columns
+# %%
+pd.pivot_table(df, index=["job_simp", "Seniority"], values="average-salary")
+
+# %%
