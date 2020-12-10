@@ -179,3 +179,15 @@ for i in df_cat.columns:
     chart.set_xticklabels(chart.get_xticklabels(), rotation=90)
     plt.show()
 # %%
+df.columns
+
+#%%
+for i in df_cat[["Location", "company_txt", "Industry"]].columns:
+    # cat_num = df_cat[i][:10].value_counts()
+    cat_num = df_cat[i].value_counts()[:10]
+    print("Graph for %s: total =%d" % (i, len(cat_num)))
+    chart = sns.barplot(x=cat_num.index, y=cat_num)
+    chart.set_xticklabels(chart.get_xticklabels(), rotation=90)
+    plt.show()
+
+# %%
