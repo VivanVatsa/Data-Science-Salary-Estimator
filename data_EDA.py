@@ -1,7 +1,7 @@
 #%%
 import pandas as pd
 
-# matplotlib = this is for data visualisation
+# matplotlib = this is for data visualization
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -91,3 +91,4 @@ df.columns
 df.company_txt
 hello world 
 # %%
+
