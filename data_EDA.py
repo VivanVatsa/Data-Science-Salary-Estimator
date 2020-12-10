@@ -81,4 +81,13 @@ df["max_salary"] = df.apply(lambda x: x.max_salary * 2
                             if x.hourly == 1 else x.max_salary,
                             axis=1)
 
-df[df["hourly" == 1]][[]]
+# df[df["hourly" == 1]][[]]
+# df[df.hourly == 1][["hourly", "min_salary", "max_salary"]]
+
+# %%
+df.columns
+
+# %%
+df.company_txt
+
+# %%
