@@ -89,6 +89,5 @@ df.columns
 
 # %%
 df.company_txt
-hello world 
-# %%
 
+# %%
