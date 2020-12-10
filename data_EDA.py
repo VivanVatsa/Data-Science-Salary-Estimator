@@ -91,3 +91,91 @@ df.columns
 df.company_txt
 
 # %%
+# help(df.describe())
+# used to check all the mean median and other metrics of the data provided
+df.describe()
+
+# %%
+df.Ratings.hist()
+
+# %%
+df.columns
+# %%
+"""
+hist() - func used to display the Histogram of the given / fetched data
+"""
+df.Rating.hist()
+
+# %%
+type(df.Rating.hist())
+
+#%%
+df["average-salary"].hist()
+# %%
+df.age.hist()
+# %%
+# using blogspot to plotting box for grouping by a certain attribute
+
+df.boxplot(column=["age", "average-salary", "Rating"])
+
+# %%
+df.boxplot(column="Rating")
+# %%
+df[["age", "average-salary", "Rating"]].corr()
+
+#%%
+cmap = sns.diverging_palette(230, 20, as_cmap=True)
+sns.heatmap(
+    df[["age", "average-salary", "Rating"]].corr(),
+    vmax=0.3,
+    center=0,
+    cmap=cmap,
+    square=True,
+    linewidths=0.5,
+    cbar_kws={"shrink": 0.5},
+)
+
+# %%
+df["desc_len"] = df["Job Description"].apply(lambda x: len(x))
+df["desc_len"]
+
+#%%
+df
+# %%
+cmap = sns.diverging_palette(230, 20, as_cmap=True)
+sns.heatmap(
+    df[["age", "average-salary", "Rating", "desc_len"]].corr(),
+    vmax=0.3,
+    center=0,
+    cmap=cmap,
+    square=True,
+    linewidths=0.5,
+    cbar_kws={"shrink": 0.5},
+)
+
+# %%
+df.columns
+# %%
+df_cat = df[[
+    "Location",
+    "Size",
+    "Type of ownership",
+    "Industry",
+    "Sector",
+    "Revenue",
+    "company_txt",
+    "python_yn",
+    "data",
+    "analysis",
+    "job_simp",
+    "Seniority",
+]]
+
+#%%
+for i in df_cat.columns:
+    cat_num = df_cat[i].value_counts()
+    print("Graph for %s: total =%d" % (i, len(cat_num)))
+    chart = sns.barplot(x=cat_num.index, y=cat_num)
+    chart.set_xticklabels(chart.get_xticklabels(), rotation=90)
+    plt.show()
+# %%
