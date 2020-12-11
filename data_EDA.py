@@ -73,13 +73,13 @@ df["desc_len"] = df["Job Description"].apply(lambda x: len(x))
 df["desc_len"]
 
 # %%
-df["min_salary"] = df.apply(lambda x: x.min_salary * 2
-                            if x.hourly == 1 else x.min_salary,
-                            axis=1)
+# df["min_salary"] = df.apply(lambda x: x.min_salary * 2
+#                             if x.hourly == 1 else x.min_salary,
+#                             axis=1)
 
-df["max_salary"] = df.apply(lambda x: x.max_salary * 2
-                            if x.hourly == 1 else x.max_salary,
-                            axis=1)
+# df["max_salary"] = df.apply(lambda x: x.max_salary * 2
+#                             if x.hourly == 1 else x.max_salary,
+#                             axis=1)
 
 # df[df["hourly" == 1]][[]]
 # df[df.hourly == 1][["hourly", "min_salary", "max_salary"]]
@@ -195,8 +195,8 @@ for i in df_cat[["Location", "company_txt", "Industry"]].columns:
 
 pd.pivot_table(df, index="job_simp", values="average-salary")
 
-# %%
-pd.pivot_table(df, index=["job_simp", "seniority"], values="average-salary")
+# # %%
+# pd.pivot_table(df, index=["job_simp", "seniority"], values="average-salary")
 
 # %%
 df.columns
@@ -209,3 +209,34 @@ pd.pivot_table(df, index=["Location", "job_simp"],
                                                     ascending=False)
 
 # %%
+pd.pivot_table(df, index=["Location", "job_simp"],
+               values="average-salary").sort_values("Location",
+                                                    ascending=False)
+
+# %%
+pd.pivot_table(df[df.job_simp == "data scientist"],
+               index="Location",
+               values="average-salary").sort_values("Location",
+                                                    ascending=False)
+
+# %%
+df.columns
+# %%
+df_pivots = df[[
+    "Rating",
+    "Industry",
+    "Sector",
+    "Revenue",
+    "python_yn",
+    "Type of ownership",
+    "average-salary",
+]]
+
+# %%
+for i in df_pivots.columns:
+    print(i)
+    print(pd.pivot_table(df_pivots, index=i,
+                         values="average-salary").sort_values('average-salary', ascending=False)
+
+# %%
+ 
