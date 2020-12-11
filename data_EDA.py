@@ -85,7 +85,7 @@ df["max_salary"] = df.apply(lambda x: x.max_salary * 2
 # df[df.hourly == 1][["hourly", "min_salary", "max_salary"]]
 
 # %%
-df.columns
+df.  
 
 # %%
 df.company_txt
@@ -202,5 +202,10 @@ pd.pivot_table(df, index=["job_simp", "seniority"], values="average-salary")
 df.columns
 # %%
 pd.pivot_table(df, index=["job_simp", "Seniority"], values="average-salary")
+
+# %%
+pd.pivot_table(df, index=["Location", "job_simp"],
+               values="average-salary").sort_values("average-salary",
+                                                    ascending=False)
 
 # %%
