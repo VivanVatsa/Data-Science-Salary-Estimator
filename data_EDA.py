@@ -85,7 +85,7 @@ df["max_salary"] = df.apply(lambda x: x.max_salary * 2
 # df[df.hourly == 1][["hourly", "min_salary", "max_salary"]]
 
 # %%
-df.  
+# df.
 
 # %%
 df.company_txt
