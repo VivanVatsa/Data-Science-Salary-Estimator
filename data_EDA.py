@@ -235,8 +235,65 @@ df_pivots = df[[
 # %%
 for i in df_pivots.columns:
     print(i)
-    print(pd.pivot_table(df_pivots, index=i,
-                         values="average-salary").sort_values('average-salary', ascending=False)
+    print(
+        pd.pivot_table(df_pivots, index=i,
+                       values="average-salary").sort_values("average-salary",
+                                                            ascending=False))
 
 # %%
- 
+pd.pivot_table(
+    df_pivots,
+    index="Revenue",
+    columns="python_yn",
+    values="average-salary",
+    aggfunc="count",
+)
+
+# %%
+
+# this is the fun part of EDA
+# this is to GENERATION OF WORDCLOUD
+#
+from wordcloud import WordCloud, ImageColorGenerator, STOPWORDS
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+
+# %%
+
+nltk.download("stopwords")
+nltk.download("punkt")
+words = " ".join(df["Job Description"])
+
+
+def punctuation_stop(text):
+    """remove punctuation and stop words"""
+    filtered = []
+    stop_words = set(stopwords.words("english"))
+    word_tokens = word_tokenize(text)
+    for w in word_tokens:
+        if w not in stop_words and w.isalpha():
+            filtered.append(w.lower())
+    return filtered
+
+
+words_filtered = punctuation_stop(words)
+
+text = " ".join([ele for ele in words_filtered])
+
+wc = WordCloud(
+    background_color="white",
+    random_state=1,
+    stopwords=STOPWORDS,
+    max_words=2000,
+    width=800,
+    height=1500,
+)
+wc.generate(text)
+
+plt.figure(figsize=[10, 10])
+plt.imshow(wc, interpolation="bilinear")
+plt.axis("off")
+plt.show()
+
+# %%
