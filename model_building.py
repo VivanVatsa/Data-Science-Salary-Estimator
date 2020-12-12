@@ -10,7 +10,7 @@ df = pd.read_csv("data_EDA.csv")
 df.columns
 
 #%%
-# df_model = [['Rating', 'Size']]
+df_model = [["Rating", "Size", ""]]
 # get dummy data
 
 # train test split
