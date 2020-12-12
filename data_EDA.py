@@ -297,3 +297,8 @@ plt.axis("off")
 plt.show()
 
 # %%
+df.to_csv("data_eda.csv")
+# %%
+df.columns
+
+# %%
