@@ -10,7 +10,17 @@ df = pd.read_csv("data_EDA.csv")
 df.columns
 
 #%%
-df_model = [["Rating", "Size", ""]]
+df_model = [[
+    "average-salary",
+    "Rating",
+    "Size",
+    "Type of ownership",
+    "Industry",
+    "Sector",
+    "Revenue",
+    "num_comp",
+    "hourly",
+]]
 # get dummy data
 
 # train test split
@@ -19,3 +29,5 @@ df_model = [["Rating", "Size", ""]]
 # random forest
 # tune models GridSearchCV
 # test end samples
+
+# %%
