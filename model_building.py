@@ -18,16 +18,25 @@ df_model = [[
     "Industry",
     "Sector",
     "Revenue",
-    "num_comp",
-    "hourly",
+    "Location",
+    "age",
+    "python_yn",
+    "job_simp",
+    "Seniority",
+    "desc_len",
 ]]
-# get dummy data
 
+#%%
+# get dummy data
+df_dum = pd.get_dummies(df_model)
 # train test split
 # multiple linear regression
 # lasso regression
 # random forest
 # tune models GridSearchCV
 # test end samples
+
+# %%
+type(df["average-salary"])
 
 # %%
