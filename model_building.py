@@ -3,26 +3,33 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-df = pd.read_csv("data_EDA.csv")
+df = pd.read_csv("data_eda.csv")
 # choose the relevant columns
 
 #%%
 df.columns
 
 #%%
-df_model = [[
-    "average-salary",
+ddf_model = df[[
+    "avg_salary",
     "Rating",
     "Size",
     "Type of ownership",
     "Industry",
     "Sector",
     "Revenue",
-    "Location",
+    "num_comp",
+    "hourly",
+    "employer_provided",
+    "job_state",
+    "same_state",
     "age",
     "python_yn",
+    "spark",
+    "aws",
+    "excel",
     "job_simp",
-    "Seniority",
+    "seniority",
     "desc_len",
 ]]
 
