@@ -54,20 +54,99 @@ X_train, X_test, y_train, y_test = train_test_split(X,
 #%%
 import statsmodels.api as sm
 
-X_sm = sm.add_constant(X)
+X_sm = X = sm.add_constant(X)
 model = sm.OLS(y, X_sm)
 
 #%%
 model.fit().summary()
 
-# lasso regression
 #%%
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression, Lasso
 from sklearn.model_selection import cross_val_score
 
 lm = LinearRegression()
 lm.fit(X_train, y_train)
 
+#%%
+# np.mean(
+#     cross_val_score(lm,
+#                     X_train,
+#                     y_train,
+#                     scoring="neg_mean_absolute_error",
+#                     cv=3))
+
+cross_val_score(lm, X_train, y_train, scoring="neg_mean_absolute_error", cv=3)
+
+# lasso regression
+#%%
+lm_1 = Lasso(alpha=0.13)
+lm_1.fit(X_train, y_test)
+np.mean(
+    cross_val_score(lm_1,
+                    X_train,
+                    y_train,
+                    scoring="neg_mean_absolute_error",
+                    cv=3))
+alpha = []
+error = []
+
+for i in range(1, 100):
+    alpha.append(i / 100)
+    lm_1 = Lasso(alpha=(i / 100))
+    error.append(
+        np.mean(
+            cross_val_score(lm_1,
+                            X_train,
+                            y_train,
+                            scoring="neg_mean_absolute_error",
+                            cv=3)))
+
+plt.plot(alpha, error)
+
+#%%
+err = tuple(zip(alpha, error))
+
+df_err = pd.DataFrame(err, columns=["alpha", "error"])
+
+df_err[df_err.error == max(df_err.error)]
+
 # random forest
+#%%
+from sklearn.ensemble import RandomForestRegressor
+
+rf = RandomForestRegressor()
+
+np.mean(
+    cross_val_score(rf,
+                    X_train,
+                    y_train,
+                    scoring="neg_mean_absolute_error",
+                    cv=3))
+
 # tune models GridSearchCV
+# this is the tuning part, using grid search as mentioned above
+#%%
+from sklearn.model_selection import GridSearchCV
+
+parameters = {
+    "n_estimators": range(10, 300, 10),
+    "criterion": (
+        "mse",
+        "mae",
+    ),
+    "max_features": ("auto", "sqrt", "log2"),
+}
+
+#%%
+gs = GridSearchCV(rf, parameters, scoring="neg_mean_absolute_error", cv=3)
+gs.fit(X_train, y_train)
+
+#%%
+gs.best_score_
+#%%
+gs.best_estimator_
+
 # test end samples
+# %%
+tpred_lm = lm.predict(X_train, y_train)
+tpred_lm_1 = lm_1.predict(X_train, y_train)
