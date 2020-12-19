@@ -79,23 +79,49 @@ cross_val_score(lm, X_train, y_train, scoring="neg_mean_absolute_error", cv=3)
 
 # lasso regression
 #%%
-lm_1 = Lasso(alpha=0.13)
-lm_1.fit(X_train, y_test)
+# lm_1 = Lasso(alpha=0.13)
+# lm_1 = Lasso(alpha=0.13)
+# lm_1.fit(X_train, y_test)
+# np.mean(
+#     cross_val_score(lm_1,
+#                     X_train,
+#                     y_train,
+#                     scoring="neg_mean_absolute_error",
+#                     cv=3))
+# alpha = []
+# error = []
+
+# for i in range(1, 100):
+#     alpha.append(i / 100)
+#     lm_1 = Lasso(alpha=(i / 100))
+#     error.append(
+#         np.mean(
+#             cross_val_score(lm_1,
+#                             X_train,
+#                             y_train,
+#                             scoring="neg_mean_absolute_error",
+#                             cv=3)))
+
+# plt.plot(alpha, error)
+
+lm_l = Lasso(alpha=0.13)
+lm_l.fit(X_train, y_train)
 np.mean(
-    cross_val_score(lm_1,
+    cross_val_score(lm_l,
                     X_train,
                     y_train,
                     scoring="neg_mean_absolute_error",
                     cv=3))
+
 alpha = []
 error = []
 
 for i in range(1, 100):
     alpha.append(i / 100)
-    lm_1 = Lasso(alpha=(i / 100))
+    lml = Lasso(alpha=(i / 100))
     error.append(
         np.mean(
-            cross_val_score(lm_1,
+            cross_val_score(lml,
                             X_train,
                             y_train,
                             scoring="neg_mean_absolute_error",
@@ -148,5 +174,9 @@ gs.best_estimator_
 
 # test end samples
 # %%
-tpred_lm = lm.predict(X_train, y_train)
-tpred_lm_1 = lm_1.predict(X_train, y_train)
+# tpred_lm = lm.predict(X_train, y_train)
+# tpred_lm_1 = lm_1.predict(X_train, y_train)
+
+tpred_lm = lm.predict(X_test)
+tpred_lml = lm_l.predict(X_test)
+tpred_rf = gs.best_estimator_.predict(X_test)
