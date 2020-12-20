@@ -61,6 +61,7 @@ df["job_simp"] = df["Job Title"].apply(title_simplifier)
 
 df.job_simp.value_counts()
 
+de
 # %%
 df["Seniority"] = df["Job Title"].apply(seniority)
 
@@ -98,6 +99,7 @@ df.describe()
 # %%
 df.Ratings.hist()
 
+
 # %%
 df.columns
 # %%
@@ -109,6 +111,7 @@ df.Rating.hist()
 # %%
 type(df.Rating.hist())
 
+
 #%%
 df["average-salary"].hist()
 # %%
@@ -118,10 +121,14 @@ df.age.hist()
 
 df.boxplot(column=["age", "average-salary", "Rating"])
 
+
 # %%
 df.boxplot(column="Rating")
+
+
 # %%
 df[["age", "average-salary", "Rating"]].corr()
+
 
 #%%
 cmap = sns.diverging_palette(230, 20, as_cmap=True)
@@ -155,6 +162,8 @@ sns.heatmap(
 
 # %%
 df.columns
+pd.
+
 # %%
 df_cat = df[[
     "Location",
@@ -200,6 +209,7 @@ pd.pivot_table(df, index="job_simp", values="average-salary")
 
 # %%
 df.columns
+pd.to_csv()
 # %%
 pd.pivot_table(df, index=["job_simp", "Seniority"], values="average-salary")
 
@@ -295,5 +305,10 @@ plt.figure(figsize=[10, 10])
 plt.imshow(wc, interpolation="bilinear")
 plt.axis("off")
 plt.show()
+
+# %%
+df.to_csv("data_eda.csv")
+# %%
+df.columns
 
 # %%
