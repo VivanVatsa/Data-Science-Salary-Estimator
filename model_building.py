@@ -180,3 +180,23 @@ gs.best_estimator_
 tpred_lm = lm.predict(X_test)
 tpred_lml = lm_l.predict(X_test)
 tpred_rf = gs.best_estimator_.predict(X_test)
+
+# %%
+from sklearn.metrics import mean_absolute_error
+
+mean_absolute_error(y_test, tpred_lm)
+
+#%%
+mean_absolute_error(y_test, tpred_lml)
+
+#%%
+mean_absolute_error(y_test, tpred_rf)
+
+#%%
+
+mean_absolute_error(y_test, (tpred_lm + tpred_rf) / 2)
+
+# %%
+((tpred_lm + tpred_rf) / 2)
+
+#%%
