@@ -216,5 +216,5 @@ with open(file_name, "rb") as pickled:
 model.predict(X_test.iloc[1, :].values.reshape(1, -1))
 
 #%%
-X_test.iloc[1, :].values
+# X_test.iloc[1, :].values
 # %%
