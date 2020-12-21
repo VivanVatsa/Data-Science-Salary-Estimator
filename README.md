@@ -1,5 +1,7 @@
 # Data-Science-Salary-Estimator
 
+`FORK & STAR THIS PROJECT. USE IT AS YOUR BEGINNERS DATA SCIENCE PROJECT`
+
 ## Project Synopsis
 
 * Created a tool that estimates Data Science salaries *{Mean Absolute Error(MAE) ~ $ 11K}* to help rookie Data Scientists negotiate their income with correct stats when they get a job.
@@ -11,7 +13,7 @@
 -------------------------------
 ## Project Walk-through
 
-### Data Scraping {Web Scraping}
+### Data Collection {Web Scraping}
 
 
 Desgined an automated Web scraper with selenium to scrape 1000+ job postings from [GlassDoor](https://www.glassdoor.co.in/). 
@@ -39,7 +41,7 @@ With each job; attributes to be focused were:
 
 *For other resources scroll at last*
 
-#### Click **.py** file-icon Below to redirect to Web Scraper Code
+#### Click **.py** file-icon Below to redirect to Web Scraper Code & Branch Workspace
 <a href="https://github.com/VivanVatsa/Data-Science-Salary-Estimator/blob/master/glassdoor_scraper.py">
 <img src="https://img.icons8.com/ios-glyphs/2x/python.png" width="5%" height="5%">
 </a>
@@ -74,7 +76,7 @@ After scraping the data, I cleaned the cluttering data for it to be usable/reada
 </a>
 
 -------------------------------
-## EDA {Exploratory Data Analysis
+## EDA {Exploratory Data Analysis}
 
 * All the imported distributions from data cleaning data-set, I looked at the distributions of the data and the value counts for the various categorical variables.
 * Using **Matplotlib & Seaborn**, categorised and crafted a beautiful data visualisation charts & plots
@@ -108,7 +110,7 @@ Designed **three different Models** for this Data-Set:
 * **Lasso Regression** –> Because of the sparse data from the many categorical variables, I thought a normalized regression like lasso would be effective.
 * **Random Forest** –> Again, with the sparsity associated with the data, I thought that this would be a good fit.
 
-#### Click Model-Building Icon Below to redirect to EDA Branch Workspace
+#### Click Model-Building Icon Below to redirect to Model_Building Branch Workspace
 <a href="https://github.com/VivanVatsa/Data-Science-Salary-Estimator/tree/model_building">
   <img src="https://img.icons8.com/windows/2x/settings--v2.gif" width="5%" height="5%">
 </a>
@@ -118,13 +120,13 @@ Designed **three different Models** for this Data-Set:
 
 ## Model performance
 
-The Random Forest model far outperformed the other approaches on the test and validation sets.
+The **Random Forest model** far outperformed the other approaches on the test and validation sets.
 
 * **Random Forest : *MAE* = 11.06711409395973**
 * **Linear Regression: *MAE* = 18.855189990211073**
 * **Ridge Regression: *MAE* = 19.665303712749914**
 
-#### Click Performance-Meter Icon Below to redirect to EDA Branch Workspace
+#### Click Performance-Meter Icon Below to redirect to Model_Building Branch Workspace
 <a href="https://github.com/VivanVatsa/Data-Science-Salary-Estimator/tree/model_building">
   <img src="https://img.icons8.com/ios/2x/speed.png" width="5%" height="5%">
 </a>
@@ -134,11 +136,11 @@ The Random Forest model far outperformed the other approaches on the test and va
 
 ## Model Productionization
 
-* The last step in this Project was to build a flask API endpoint that was hosted on a local webserver.
+* The last step in this Project was to build a **Flask API** endpoint that was hosted on a *local webserver.*
 * Several Articles helped in Deployment of the Model on a local server (*all resources linked at last*)
 * The API endpoint takes in a request with a list of values from a job listing and returns an estimated salary.
 
-#### Click Flask API Icon Below to redirect to EDA Branch Workspace
+#### Click Flask API Icon Below to redirect to flask_API Branch Workspace
 <a href="https://github.com/VivanVatsa/Data-Science-Salary-Estimator/tree/flask_API">
   <img src="https://img.icons8.com/ios/2x/api-settings.png" width="5%" height="5%">
 </a>
@@ -156,6 +158,6 @@ The Random Forest model far outperformed the other approaches on the test and va
 * Seaborn Documentation: [Click here](http://seaborn.pydata.org/examples/many_pairwise_correlations.html)
 * Scraper Github: [Click Here](https://github.com/arapfaik/scraping-glassdoor-selenium)
 * Flask Model-Productionization: [Click Here](https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2)
-
+* Ken Jee Data Science Tutorials: [Ken Jee YouTube Channel](https://www.youtube.com/c/KenJee1)
 
 -----------------------------
