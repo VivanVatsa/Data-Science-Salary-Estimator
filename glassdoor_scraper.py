@@ -13,21 +13,24 @@ import pandas as pd
 # %%
 def get_jobs(keyword, num_jobs, verbose, path, slp_time):
     """Gathers jobs as a dataframe, scraped from Glassdoor"""
+    
+    
+    # Uncomment the line below if you'd like to scrape without a new Chrome window every time.
 
     # Initializing the webdriver
     # options = webdriver.ChromeOptions()
     options = webdriver.FirefoxOptions()
 
-    # Uncomment the line below if you'd like to scrape without a new Chrome window every time.
     # options.add_argument('headless')
 
-    # Change the path to where chromedriver is in your home folder.
+    # Change the path to where chromedriver/FireFox-driver is in your home folder.
 
     driver = webdriver.Firefox(executable_path=path, options=options)
 
     driver.set_window_size(1120, 1000)
 
-    url = "https://www.glassdoor.co.in/Job/data-scientist-jobs-SRCH_KO0,14.htm?countryRedirect=true"
+    url = "https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword="+keyword+"&sc.keyword="+keyword+"&locT=&locId=&jobType="
+    # url = "https://www.glassdoor.co.in/Job/data-scientist-jobs-SRCH_KO0,14.htm?countryRedirect=true"
     driver.get(url)
     jobs = []
 
@@ -232,6 +235,6 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
 
 
 # # %%
-# # This line will open a new chrome window and start the scraping.
+# # This line will open a new chrome/FireFox window and start the scraping.
 # df = get_jobs("data scientist", 5, False)
 # df
