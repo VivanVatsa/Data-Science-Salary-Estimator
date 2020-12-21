@@ -2,6 +2,7 @@ import flask
 from flask import Flask, jsonify, request
 import json
 from flask.helpers import get_debug_flag
+import pickle
 
 app = Flask(__name__)
 
@@ -16,7 +17,12 @@ def load_models():
 
 @app.route("/predict", methods=["GET"])
 def predict():
-    response = json.dumps({"response": "freak-yeahhh"})
+    # stub input features
+    x = 5.963
+    # load model
+    model = load_models()
+    prediction = model.predict([[x]])[0]
+    response = json.dumps({"response": prediction})
     return response, 200
 
 
