@@ -153,6 +153,9 @@ The **Random Forest model** far outperformed the other approaches on the test an
     Python Version: 3.9.0
     Packages: Pandas, Numpy, Sklearn, Matplotlib, Seaborn, Selenium, Flask, Json, Pickle
     For Web Framework Requirements type in console >> pip install -r requirements.txt
+* Selenium WebDrivers: 
+    * [FireFox - GeckoDriver](https://github.com/VivanVatsa/Data-Science-Salary-Estimator/tree/master/drivers) 
+    * [Chrome - ChromeDriver](https://github.com/VivanVatsa/Data-Science-Salary-Estimator/tree/master/drivers)
 * Scikit-learn Documentation: [Click here](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
 * Matplotlib Documentation: [Click here](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.boxplot.html?highlight=boxplot#matplotlib.pyplot.boxplot)
 * Seaborn Documentation: [Click here](http://seaborn.pydata.org/examples/many_pairwise_correlations.html)
