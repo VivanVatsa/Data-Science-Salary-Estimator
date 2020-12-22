@@ -150,8 +150,8 @@ The **Random Forest model** far outperformed the other approaches on the test an
 
 ## Resources Consumed for this project & where you can find them:
 
-    Python Version: 3.9.0
-    Packages: Pandas, Numpy, Sklearn, Matplotlib, Seaborn, Selenium, Flask, Json, Pickle
+    Python Ver: 3.9.0
+    Packages Used: Pandas, Numpy, Sklearn, Matplotlib, Seaborn, Selenium, Flask, Json, Pickle
     For Web Framework Requirements type in console >> pip install -r requirements.txt
 * Selenium WebDrivers: 
     * [FireFox - GeckoDriver](https://github.com/VivanVatsa/Data-Science-Salary-Estimator/tree/master/drivers) 
