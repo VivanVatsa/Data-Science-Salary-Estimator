@@ -38,8 +38,10 @@ df_model = df[[
 df_dum = pd.get_dummies(df_model)
 df_dum
 
-# train test split
 #%%
+
+# train test split
+
 from sklearn.model_selection import train_test_split
 
 X = df_dum.drop("avg_salary", axis=1)
@@ -79,6 +81,8 @@ cross_val_score(lm, X_train, y_train, scoring="neg_mean_absolute_error", cv=3)
 
 # lasso regression
 #%%
+# THIS IS THE CODE THAT WAS USED ON TRIAL BASIS FOR THE LASSO REGRESSION MODEL
+
 # lm_1 = Lasso(alpha=0.13)
 # lm_1 = Lasso(alpha=0.13)
 # lm_1.fit(X_train, y_test)
@@ -103,6 +107,8 @@ cross_val_score(lm, X_train, y_train, scoring="neg_mean_absolute_error", cv=3)
 #                             cv=3)))
 
 # plt.plot(alpha, error)
+
+# LASSO REGRESSION USED:
 
 lm_l = Lasso(alpha=0.13)
 lm_l.fit(X_train, y_train)
@@ -131,13 +137,11 @@ plt.plot(alpha, error)
 
 #%%
 err = tuple(zip(alpha, error))
-
 df_err = pd.DataFrame(err, columns=["alpha", "error"])
-
 df_err[df_err.error == max(df_err.error)]
 
-# random forest
 #%%
+# random forest
 from sklearn.ensemble import RandomForestRegressor
 
 rf = RandomForestRegressor()
