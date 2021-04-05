@@ -94,7 +94,7 @@ After scraping the data, I cleaned the cluttering data for it to be usable/reada
   <img src="https://img.icons8.com/pastel-glyph/2x/increase-profits.png" width="5%" height="5%">
 </a>
 
---------------------------------
+-----------------------------
 
 
 ## Model Building
